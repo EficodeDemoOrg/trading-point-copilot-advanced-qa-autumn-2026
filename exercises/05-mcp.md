@@ -1,4 +1,4 @@
-# 🧩 4. MCP Exercises
+# 🧩 5. MCP Exercises
 
 In these exercises, you will:
 - Set up the Playwright MCP server in VS Code
@@ -8,7 +8,7 @@ In these exercises, you will:
 
 **❗ Security Note:** Local MCP servers can execute arbitrary commands, read local files, and leak code or secrets from your machine. Only install servers from trusted vendors.
 
-## 🎭 Exercise 4.1: Playwright MCP Setup in VS Code
+## 🎭 Exercise 5.1: Playwright MCP Setup in VS Code
 
 Playwright is a testing framework that enables browser automation. With the Playwright MCP and the tools it exposes, Copilot can open a browser, navigate to any website, and interact with it just like a human user.
 
@@ -38,7 +38,7 @@ Let's start by setting up the MCP server.
 1. Notice the inline controls above the server definition in the JSON file. Use them to start, stop, and restart the server.
 1. Check the tools menu in Copilot Chat. Can you see Playwright and all of its tools?
 
-## 💬 Exercise 4.2: Playwright MCP Server Prompting
+## 💬 Exercise 5.2: Playwright MCP Server Prompting
 
 Now let's try some prompts that use the browser tools provided by the MCP server.
 
@@ -53,13 +53,13 @@ Now let's try some prompts that use the browser tools provided by the MCP server
     ```
 1. Verify that a browser window opens and that Copilot is able to navigate the user interface and make the requested additions. 
 
-## 🧰 Exercise 4.3: Installing MCP Servers From the Extensions View
+## 🧰 Exercise 5.3: Installing MCP Servers From the Extensions View
 1. In VS Code, open the Extensions view and search for `@mcp` to list MCP servers available for one-click install.
 1. Install one of the servers, for example Microsoft Learn.
 1. Select **Install in workspace** to install it in this project.
 1. Open `.vscode/mcp.json` and confirm the server configuration is present. Then check whether the server is running and whether its tools appear in the tools menu.
 
-## 🐙 Exercise 4.4: GitHub MCP Registry
+## 🐙 Exercise 5.4: GitHub MCP Registry
 The [GitHub MCP Registry](https://github.com/mcp) is a GitHub-maintained, curated list of MCP servers. It makes it easy to discover and install MCP servers directly in VS Code with one-click installation.
 
 Browse to the [GitHub MCP Registry](https://github.com/mcp) and explore some of the available servers. A few interesting ones:
