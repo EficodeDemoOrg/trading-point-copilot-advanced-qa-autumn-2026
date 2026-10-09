@@ -21,18 +21,20 @@ For a thorough list of models and best use cases for them, see [the official doc
 
 ## 🧪 Exercise 4.1: Smoke test suite
 
-1. Ensure **Plan** is selected in the Copilot chat panel. Ask Copilot to inspect the application and the existing Robot Framework tests, then create a smoke test suite plan:
+1. Decide which test framework and language you want to use for the smoke test suite, e.g. Robot Framework, Playwright, Cypress, pytest or whichever you are most familiar with. The repository currently contains Playwright tests in `e2e/` and unit tests in `backend/test/` and `frontend/test/`, but you are free to choose a different technology.
+
+1. Ensure **Plan** is selected in the Copilot chat panel. Ask Copilot to inspect the application and the existing tests, then create a smoke test suite plan. Replace `<your framework>` with your chosen framework:
 	```text
-	Create a plan for a Robot Framework smoke test suite for the whole Team Skills Matrix application. Inspect the application and existing tests first. Limit the number of test cases to 10 most critical ones.
+	Create a plan for a <your framework> smoke test suite for the whole Team Skills Matrix application. Inspect the application and existing tests first. Include a suggested folder structure and how the suite is run. Limit the number of test cases to 10 most critical ones.
 
 	Describe the test cases at a conceptual level. For each test case, state what it should test and its expected result. Prioritize important user-visible workflows. Focus on test intent rather than low-level implementation details.
 	```
 
-1. Review the proposed plan. Answer any questions the plan agent may have. Review tha plan and if needed, ask Copilot to improve it until it covers the most critical paths e.g. in board interactions, cards, columns, labels, and filtering.
+1. Review the proposed plan. Answer any questions the plan agent may have. Review tha plan and if needed, ask Copilot to improve it until it covers the most critical paths, e.g. managing skills and engineers, recording assessments, the team heatmap, team gaps, and recommendations.
 
 1. Next let's move to the implementation phase. First select a model you want to use for the immplementation of the plan, e.g. GPT-5.6 Terra, After that click on the **Start Implementation** button to hand off the finalized plan to an implementation agent.
 
-1. Validate the generated tests by reviewing each test case. Check that its workflow and assertions make sense and match the expected application behavior. Ask Copilot to correct any issues, then run the full test suite and review the results.
+1. Validate the generated tests by reviewing each test case. Check that its workflow and assertions make sense and match the expected application behavior. Ask Copilot to correct any issues, then run the full smoke test suite with your chosen framework and review the results.
 
 ## 🗄️ Exercise 4.2: Development environment test data strategy
 
