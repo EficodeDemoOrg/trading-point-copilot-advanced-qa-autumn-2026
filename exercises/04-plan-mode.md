@@ -1,4 +1,4 @@
-# 🗺️ 4. Plan and Agent Mode Exercises
+# 🗺️ 4. Plan Mode
 
 In these exercises, you will:
 - Select suitable models for planning and implementation
